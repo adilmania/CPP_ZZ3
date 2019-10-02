@@ -4,15 +4,19 @@
 #include <iostream>
 #include <sstream>
 
+class Polaire;
+class Cartesien;
 class Point
 {
+private:
 public:
     Point();
-    ~Point();
-    virtual void afficher(std::stringstream &flux) const = 0;
-    friend std::stringstream &operator<<(std::stringstream &, Point const &);
+    virtual ~Point();
 
-private:
+    virtual void afficher(std::stringstream &flux) const = 0;
+    virtual void convertir(Polaire &) const = 0;
+    virtual void convertir(Cartesien &) const = 0;
+    friend std::stringstream &operator<<(std::stringstream &, Point const &);
 };
 
 #endif

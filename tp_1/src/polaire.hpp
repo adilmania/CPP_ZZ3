@@ -3,24 +3,30 @@
 
 #include <iostream>
 #include <sstream>
-
-#include "point.hpp"
+#include <cmath>
+#include <point.hpp>
+#include <cartesien.hpp>
 
 class Polaire : public Point
 {
 public:
     Polaire();
-    Polaire(double a, double d);
+    Polaire(double, double);
+    Polaire(const Cartesien &);
     ~Polaire();
-    double getAngle() const;
-    double getDistance() const;
-    void setAngle(double value);
-    void setDistance(double value);
-    void afficher(std::stringstream &flux) const override;
+
+    void afficher(std::stringstream &) const override;
+    void convertir(Cartesien &) const override;
+    void convertir(Polaire &) const override;
+
+    double getAngle() const { return m_angle; };
+    double getDistance() const { return m_distance; };
+    void setAngle(double a) { m_angle = a; };
+    void setDistance(double d) { m_distance = d; };
 
 private:
-    double a;
-    double d;
+    double m_angle;
+    double m_distance;
 };
 
 #endif

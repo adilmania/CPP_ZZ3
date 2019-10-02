@@ -2,24 +2,31 @@
 #define DEF_CARTESIEN
 
 #include <iostream>
-
-#include "point.hpp"
+#include <sstream>
+#include <cmath>
+#include <point.hpp>
+#include <polaire.hpp>
 
 class Cartesien : public Point
 {
+private:
+    double m_X;
+    double m_Y;
+
 public:
     Cartesien();
-    Cartesien(double x, double y);
+    Cartesien(double, double);
+    Cartesien(const Polaire &);
     ~Cartesien();
-    double getX() const;
-    void setX(double value);
-    double getY() const;
-    void setY(double value);
-    void afficher(std::stringstream &flux) const override;
 
-private:
-    double X;
-    double Y;
+    void afficher(std::stringstream &flux) const override;
+    void convertir(Polaire &) const override;
+    void convertir(Cartesien &) const override;
+
+    double getX() const { return m_X; };
+    void setX(double x) { m_X = x; };
+    double getY() const { return m_Y; };
+    void setY(double y) { m_Y = y; };
 };
 
 #endif

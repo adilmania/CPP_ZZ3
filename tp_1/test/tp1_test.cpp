@@ -161,7 +161,7 @@ TEST_CASE("TP1_Point::OperateurFlux")
 }
 
 //----------------------------------------------------------------------------------------------- 13
-/*TEST_CASE("TP1_Point::ConversionVersPolaire_V1")
+TEST_CASE("TP1_Point::ConversionVersPolaire_V1")
 {
     const double x = 12.0;
     const double y = 24.0;
@@ -175,10 +175,10 @@ TEST_CASE("TP1_Point::OperateurFlux")
 
     REQUIRE(p.getAngle() == Approx(a).epsilon(1e-3));
     REQUIRE(p.getDistance() == Approx(d).epsilon(1e-3));
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 14
-/*TEST_CASE("TP1_Point::ConversionVersCartesien_V1")
+TEST_CASE("TP1_Point::ConversionVersCartesien_V1")
 {
     const double a = 12.0;
     const double d = 24.0;
@@ -192,69 +192,72 @@ TEST_CASE("TP1_Point::OperateurFlux")
 
     REQUIRE(c.getX() == Approx(x).epsilon(1e-3));
     REQUIRE(c.getY() == Approx(y).epsilon(1e-3));
-}*/
+}
 
 //----------------------------------------------------------------------------------------------- 15
-/*TEST_CASE ( "TP1_Point::ConversionVirtuel" ) {
- const double x = 12.0;
- const double y = 24.0;
- const double a = 63.434948;
- const double d = 26.832815;
+TEST_CASE("TP1_Point::ConversionVirtuel")
+{
+    const double x = 12.0;
+    const double y = 24.0;
+    const double a = 63.434948;
+    const double d = 26.832815;
 
- Cartesien c(x,y);
- Polaire p(a,d);
+    Cartesien c(x, y);
+    Polaire p(a, d);
 
- const Point * x1 = &c;
- const Point * x2 = &p;
+    const Point *x1 = &c;
+    const Point *x2 = &p;
 
- Cartesien c1;
- Cartesien c2;
- Polaire p1;
- Polaire p2;
+    Cartesien c1;
+    Cartesien c2;
+    Polaire p1;
+    Polaire p2;
 
- x1->convertir(c1);
- x1->convertir(p1);
- x2->convertir(c2);
- x2->convertir(p2);
+    x1->convertir(c1);
+    x1->convertir(p1);
+    x2->convertir(c2);
+    x2->convertir(p2);
 
- REQUIRE ( c1.getX() == Approx(x).epsilon(1e-3) );
- REQUIRE ( c1.getY() == Approx(y).epsilon(1e-3) );
- REQUIRE ( c2.getX() == Approx(x).epsilon(1e-3) );
- REQUIRE ( c2.getY() == Approx(y).epsilon(1e-3) );
+    REQUIRE(c1.getX() == Approx(x).epsilon(1e-3));
+    REQUIRE(c1.getY() == Approx(y).epsilon(1e-3));
+    REQUIRE(c2.getX() == Approx(x).epsilon(1e-3));
+    REQUIRE(c2.getY() == Approx(y).epsilon(1e-3));
 
- REQUIRE ( p1.getAngle() == Approx(a).epsilon(1e-3) );
- REQUIRE ( p1.getDistance() == Approx(d).epsilon(1e-3) );
- REQUIRE ( p2.getAngle() == Approx(a).epsilon(1e-3) );
- REQUIRE ( p2.getDistance() == Approx(d).epsilon(1e-3) );
-}*/
+    REQUIRE(p1.getAngle() == Approx(a).epsilon(1e-3));
+    REQUIRE(p1.getDistance() == Approx(d).epsilon(1e-3));
+    REQUIRE(p2.getAngle() == Approx(a).epsilon(1e-3));
+    REQUIRE(p2.getDistance() == Approx(d).epsilon(1e-3));
+}
 
 //----------------------------------------------------------------------------------------------- 16
-/*TEST_CASE ( "TP1_Point::ConversionVersPolaire_V2" ) {
- const double x = 12.0;
- const double y = 24.0;
- const double a = 63.434948;
- const double d = 26.832815;
+TEST_CASE("TP1_Point::ConversionVersPolaire_V2")
+{
+    const double x = 12.0;
+    const double y = 24.0;
+    const double a = 63.434948;
+    const double d = 26.832815;
 
- Cartesien c(x,y);
- Polaire p(c);
+    Cartesien c(x, y);
+    Polaire p(c);
 
- REQUIRE ( p.getAngle() == Approx(a).epsilon(1e-3) );
- REQUIRE ( p.getDistance() == Approx(d).epsilon(1e-3) );
-}*/
+    REQUIRE(p.getAngle() == Approx(a).epsilon(1e-3));
+    REQUIRE(p.getDistance() == Approx(d).epsilon(1e-3));
+}
 
 //----------------------------------------------------------------------------------------------- 17
-/*TEST_CASE ( "TP1_Point::ConversionVersCartesien_V2" ) {
- const double a = 12.0;
- const double d = 24.0;
- const double x = 23.475542;
- const double y = 4.9898805;
+TEST_CASE("TP1_Point::ConversionVersCartesien_V2")
+{
+    const double a = 12.0;
+    const double d = 24.0;
+    const double x = 23.475542;
+    const double y = 4.9898805;
 
- Polaire p(a,d);
- Cartesien c(p);
+    Polaire p(a, d);
+    Cartesien c(p);
 
- REQUIRE ( c.getX() == Approx(x).epsilon(1e-3) );
- REQUIRE ( c.getY() == Approx(y).epsilon(1e-3) );
-}*/
+    REQUIRE(c.getX() == Approx(x).epsilon(1e-3));
+    REQUIRE(c.getY() == Approx(y).epsilon(1e-3));
+}
 
 //----------------------------------------------------------------------------------------------- 18
 /*TEST_CASE ( "TP1_Nuage::Ajout" ) {
