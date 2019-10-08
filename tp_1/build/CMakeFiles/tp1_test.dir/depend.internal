@@ -6,6 +6,12 @@ CMakeFiles/tp1_test.dir/src/cartesien.cpp.o
  ../src/polaire.hpp
  /Users/adil/Dev/CPP_ZZ3/tp_1/src/cartesien.cpp
  /Users/adil/Dev/CPP_ZZ3/tp_1/src/cartesien.hpp
+CMakeFiles/tp1_test.dir/src/nuage.cpp.o
+ ../src/cartesien.hpp
+ ../src/nuage.hpp
+ ../src/point.hpp
+ ../src/polaire.hpp
+ /Users/adil/Dev/CPP_ZZ3/tp_1/src/nuage.cpp
 CMakeFiles/tp1_test.dir/src/point.cpp.o
  /Users/adil/Dev/CPP_ZZ3/tp_1/src/point.cpp
  /Users/adil/Dev/CPP_ZZ3/tp_1/src/point.hpp
@@ -19,6 +25,7 @@ CMakeFiles/tp1_test.dir/test/catch.cpp.o
  /Users/adil/Dev/CPP_ZZ3/tp_1/test/catch.hpp
 CMakeFiles/tp1_test.dir/test/tp1_test.cpp.o
  ../src/cartesien.hpp
+ ../src/nuage.hpp
  ../src/point.hpp
  ../src/polaire.hpp
  /Users/adil/Dev/CPP_ZZ3/tp_1/test/catch.hpp

@@ -8,6 +8,12 @@ CMakeFiles/tp1_point.dir/src/cartesien.cpp.o
  /Users/adil/Dev/CPP_ZZ3/tp_1/src/cartesien.hpp
 CMakeFiles/tp1_point.dir/src/main_point.cpp.o
  /Users/adil/Dev/CPP_ZZ3/tp_1/src/main_point.cpp
+CMakeFiles/tp1_point.dir/src/nuage.cpp.o
+ ../src/cartesien.hpp
+ ../src/nuage.hpp
+ ../src/point.hpp
+ ../src/polaire.hpp
+ /Users/adil/Dev/CPP_ZZ3/tp_1/src/nuage.cpp
 CMakeFiles/tp1_point.dir/src/point.cpp.o
  /Users/adil/Dev/CPP_ZZ3/tp_1/src/point.cpp
  /Users/adil/Dev/CPP_ZZ3/tp_1/src/point.hpp

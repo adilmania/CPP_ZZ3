@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/adil/Dev/CPP_ZZ3/tp_1/src/cartesien.cpp" "/Users/adil/Dev/CPP_ZZ3/tp_1/build/CMakeFiles/tp1_point.dir/src/cartesien.cpp.o"
   "/Users/adil/Dev/CPP_ZZ3/tp_1/src/main_point.cpp" "/Users/adil/Dev/CPP_ZZ3/tp_1/build/CMakeFiles/tp1_point.dir/src/main_point.cpp.o"
+  "/Users/adil/Dev/CPP_ZZ3/tp_1/src/nuage.cpp" "/Users/adil/Dev/CPP_ZZ3/tp_1/build/CMakeFiles/tp1_point.dir/src/nuage.cpp.o"
   "/Users/adil/Dev/CPP_ZZ3/tp_1/src/point.cpp" "/Users/adil/Dev/CPP_ZZ3/tp_1/build/CMakeFiles/tp1_point.dir/src/point.cpp.o"
   "/Users/adil/Dev/CPP_ZZ3/tp_1/src/polaire.cpp" "/Users/adil/Dev/CPP_ZZ3/tp_1/build/CMakeFiles/tp1_point.dir/src/polaire.cpp.o"
   )
