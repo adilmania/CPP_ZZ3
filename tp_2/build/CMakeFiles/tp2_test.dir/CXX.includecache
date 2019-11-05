@@ -46,11 +46,7 @@ point.hpp
 cartesien.hpp
 -
 
-/Users/adil/Dev/CPP_ZZ3/tp_1/src/nuage.cpp
-nuage.hpp
--
-
-/Users/adil/Dev/CPP_ZZ3/tp_1/test/catch.hpp
+/Users/adil/Dev/CPP_ZZ3/tp_2/test/catch.hpp
 TargetConditionals.h
 -
 iosfwd
@@ -298,7 +294,7 @@ string
 memory
 -
 Foundation/Foundation.h
-/Users/adil/Dev/CPP_ZZ3/tp_1/test/Foundation/Foundation.h
+/Users/adil/Dev/CPP_ZZ3/tp_2/test/Foundation/Foundation.h
 algorithm
 -
 random
@@ -478,16 +474,10 @@ algorithm
 cassert
 -
 
-/Users/adil/Dev/CPP_ZZ3/tp_1/test/tp1_test.cpp
+/Users/adil/Dev/CPP_ZZ3/tp_2/test/tp2_test.cpp
 catch.hpp
-/Users/adil/Dev/CPP_ZZ3/tp_1/test/catch.hpp
-sstream
--
-typeinfo
--
-cartesien.hpp
--
-polaire.hpp
+/Users/adil/Dev/CPP_ZZ3/tp_2/test/catch.hpp
+cmath
 -
 nuage.hpp
 -

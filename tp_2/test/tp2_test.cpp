@@ -5,22 +5,23 @@
 
 //#include <cosinus.hpp>
 //#include <exponentielle.hpp>
-//#include <nuage.hpp>
+#include <nuage.hpp>
 
 // Tests //-----------------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------------------------ 1
-/*TEST_CASE ( "TP2_Nuage::Ajout" ) {
- Nuage<Cartesien> n;
+/*TEST_CASE("TP2_Nuage::Ajout")
+{
+    Nuage<Cartesien> n;
 
- REQUIRE ( n.size() == 0u );
+    REQUIRE(n.size() == 0u);
 
- n.ajouter(Cartesien(12,34));
- n.ajouter(Cartesien(56,78));
- n.ajouter(Cartesien(90,12));
- n.ajouter(Cartesien(34,56));
+    n.ajouter(Cartesien(12, 34));
+    n.ajouter(Cartesien(56, 78));
+    n.ajouter(Cartesien(90, 12));
+    n.ajouter(Cartesien(34, 56));
 
- REQUIRE ( n.size() == 4u );
+    REQUIRE(n.size() == 4u);
 }*/
 
 //------------------------------------------------------------------------------------------------ 2
