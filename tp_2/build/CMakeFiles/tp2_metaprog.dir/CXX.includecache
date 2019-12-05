@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/cartesien.hpp
+point.hpp
+-
+
+../src/point.hpp
+iostream
+-
+
+../src/polaire.hpp
+point.hpp
+-
+
+/Users/adil/Dev/CPP_ZZ3/tp_2/src/cartesien.cpp
+cmath
+-
+cartesien.hpp
+-
+polaire.hpp
+-
+
+/Users/adil/Dev/CPP_ZZ3/tp_2/src/point.cpp
+point.hpp
+-
+
+/Users/adil/Dev/CPP_ZZ3/tp_2/src/polaire.cpp
+cmath
+-
+cartesien.hpp
+-
+polaire.hpp
+-
+
