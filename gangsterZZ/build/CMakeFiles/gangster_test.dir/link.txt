@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/gangster_test.dir/test/catch.cpp.o CMakeFiles/gangster_test.dir/test/gangster_test.cpp.o CMakeFiles/gangster_test.dir/src/gangster.cpp.o  -o gangster_test -lc++ 
