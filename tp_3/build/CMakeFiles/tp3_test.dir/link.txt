@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/cc  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/tp3_test.dir/test/catch.cpp.o CMakeFiles/tp3_test.dir/test/tp3_test.cpp.o  -o tp3_test -lc++ 
