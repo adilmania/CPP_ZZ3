@@ -79,24 +79,24 @@ TEST_CASE("Inconnu")
   CHECK(strcmp(inconnu.what(), "personnalite inconnue") == 0);
 }
 
-/*
-TEST_CASE("Exception") {
+TEST_CASE("Exception")
+{
   Gangster inconnu;
-  
-  REQUIRE_THROWS_AS(inconnu.getPersonne(), InconnuException);
-} */
 
-/*
-TEST_CASE("Revelation") {
+  REQUIRE_THROWS_AS(inconnu.getPersonne(), InconnuException);
+}
+
+TEST_CASE("Revelation")
+{
   Gangster parrain;
   const Personne vito("Vito Corleone");
-  
-  CHECK(! vito.equals(Personne("loic")));
+
+  CHECK(!vito.equals(Personne("loic")));
 
   parrain.setPersonne(vito);
-  
+
   CHECK(parrain.getPersonne().equals(Personne("Vito Corleone")));
-} */
+}
 
 /*
 TEST_CASE("Comparaison") {

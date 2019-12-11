@@ -23,13 +23,13 @@ public:
         for (unsigned i = 0; i < h_nom; ++i)
             hist.push_back(Classe(h_inf + intervalle * i, h_inf + intervalle * (i + 1)));
     };
-    ~Histogramme(){};
-    const classes_t &getClasses(void) const { return hist; };
-    /*void ajouter(const Echantillon &echantillon)
+    /* Histogramme(Echantillon &echantillon)
     {
         for (unsigned i = 0; i < echantillon.getTaille(); ++i)
-            echantillon.ajouter(echantillon.getValeur(i));
+            hist.push_back(echantillon.getValeur(i));
     };*/
+    ~Histogramme(){};
+    const classes_t &getClasses(void) const { return hist; };
 };
 
 #endif

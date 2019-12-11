@@ -20,8 +20,9 @@ public:
     void ajouter(Valeur val) { ech.push_back(val); };
     Valeur getMinimum(void)
     {
-        if (ech.size() == 0)
+        if (ech.size() == 0){
             throw std::domain_error("Le vecteur est VIDE donc pas de MINIMUM");
+        }
         return *min_element(ech.begin(), ech.end());
     };
     Valeur getMaximum(void)
@@ -34,7 +35,7 @@ public:
     {
         if (i >= ech.size())
             throw std::out_of_range("Out");
-        return ech.operator[](i);
+        return ech[i];
     }
 };
 
